@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPAHAN LAPTOP PdPc BIDANG KEMANUSIAAN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TEMPAHAN LAPTOP PdPc BIDANG KEMANUSIAAN</h1>
+        <img src="https://i.ibb.co/99pndyx/1.jpg" alt="Computer A">
+        <img src="https://i.ibb.co/b1j6NM8/2.jpg" alt="Computer B">
+    </header>
+    <section class="booking-form">
+        <h2>Borang Tempahan</h2>
+        <form id="bookingForm">
+            <label for="tarikh">Tarikh:</label>
+            <input type="date" id="tarikh" name="tarikh" required>
+
+            <label for="namaGuru">Nama Guru:</label>
+            <input type="text" id="namaGuru" name="namaGuru" required>
+
+            <label for="subjekGuru">Subjek Guru:</label>
+            <input type="text" id="subjekGuru" name="subjekGuru" required>
+
+            <label for="hari">Hari:</label>
+            <select id="hari" name="hari" required>
+                <option value="ISNIN">ISNIN</option>
+                <option value="SELASA">SELASA</option>
+                <option value="RABU">RABU</option>
+                <option value="KHAMIS">KHAMIS</option>
+                <option value="JUMAAT">JUMAAT</option>
+                <option value="SABTU">SABTU</option>
+                <option value="AHAD">AHAD</option>
+            </select>
+
+            <label for="masaDari">Masa Dari:</label>
+            <input type="time" id="masaDari" name="masaDari" min="07:30" max="16:00" required>
+
+            <label for="masaHingga">Masa Hingga:</label>
+            <input type="time" id="masaHingga" name="masaHingga" min="07:30" max="16:00" required>
+
+            <label for="laptop">Laptop:</label>
+            <select id="laptop" name="laptop" required>
+                <option value="A">Laptop A</option>
+                <option value="B">Laptop B</option>
+            </select>
+
+            <button type="submit">Tempah</button>
+        </form>
+    </section>
+    <section class="report">
+        <h2>Laporan Tempahan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bil</th>
+                    <th>Tarikh</th>
+                    <th>Hari</th>
+                    <th>Masa</th>
+                    <th>Nama Guru</th>
+                    <th>Subjek Guru</th>
+                    <th>Laptop</th>
+                </tr>
+            </thead>
+            <tbody id="reportTable">
+                <!-- Tempahan akan dimasukkan di sini -->
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

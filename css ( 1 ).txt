@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9d9d9;
+    color: #353535;
+}
+
+header {
+    background-color: #3c6e71;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+}
+
+header img:first-child {
+    left: 20px;
+}
+
+header img:last-child {
+    right: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.booking-form, .report {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+h2 {
+    color: #284b63;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #3c6e71;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #284b63;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #353535;
+    padding: 8px;
+    text-align: left;
+}
